@@ -1,19 +1,23 @@
 import React from 'react'
-// import Add from "../img/addAvatar.png"
+import Add from "../img/addAvatar.png"
 
 const Register = () => {
+
+  const handleSubmit 
+
+  
   return (
     <div className='formContainer'>
       <div className="formWrapper">
       <span className="logo">ChatX</span>
       <span className="title">Register</span>
-            <form action="">
+            <form onSubmit={handleSubmit}>
                   <input type="text" placeholder='display name' />
                   <input type="email" placeholder='email'/>
                   <input type="password" placeholder='password' />
                   <input style={{display:"none"}} type="file" id='file' />
                   <label htmlFor="file">
-                        <img src="{Add}" alt="" />
+                        <img src={Add} alt="" />
                         <span>Add a image</span>
                   </label>
                   <button>Sign Up</button>
